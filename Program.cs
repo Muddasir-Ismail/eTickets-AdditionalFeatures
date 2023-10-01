@@ -11,7 +11,7 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 builder.Services.AddScoped<IActorsService, ActorsService>();
 builder.Services.AddScoped<ICinemaService, CinemasService>();
 builder.Services.AddScoped<IProducersService, ProducersService>();
-//builder.services.AddScoped<IMoviesService, MoviesService>();
+builder.Services.AddScoped<IMoviesServices, MoviesService>();
 //builder.services.AddScoped<IOrdersService, OrdersService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();

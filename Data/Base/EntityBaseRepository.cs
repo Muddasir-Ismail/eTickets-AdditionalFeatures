@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace eTickets.Data.Base
 {
-    public class EntityBaseRepository<T>: IEntitybaseRepository<T> where T : class, IEntityBase, new()
+    public class EntityBaseRepository<T>: IEntityBaseRepository<T> where T : class, IEntityBase, new()
     {
         private readonly AppDbContext _context;
         public EntityBaseRepository(AppDbContext context)

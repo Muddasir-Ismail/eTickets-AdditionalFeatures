@@ -2,7 +2,7 @@
 
 namespace eTickets.Data.Base
 {
-    public interface IEntitybaseRepository<T> where T : class, IEntityBase,new()
+    public interface IEntityBaseRepository<T> where T : class, IEntityBase,new()
     {
         Task<IEnumerable<T>> GetAllAsync();
         Task<IEnumerable<T>> GetAllAsync(params Expression<Func<T, object>>[] includeProperties);
