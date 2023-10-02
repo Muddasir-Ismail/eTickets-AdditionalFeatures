@@ -10,8 +10,8 @@ namespace eTickets.Controllers
 {
     public class MoviesController : Controller
     {
-        private readonly IMoviesServices _service;
-        public MoviesController(IMoviesServices service)
+        private readonly IMoviesService _service;
+        public MoviesController(IMoviesService service)
         {
             _service = service;
         }
